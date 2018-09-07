@@ -1,0 +1,222 @@
+.header
+  background-color: #fff
+  min-height: 97px
+  position: relative
+  z-index: 100
+
+  @media(min-width: 768px)
+    min-height: 176px
+
+  @media(min-width: 1200px)
+    min-height: 187px
+
+  @media(min-width: 1900px)
+    min-height: 266px
+
+  &.scrolled
+    .header__inner
+      padding-top: 8px
+      padding-bottom: 8px
+
+      @media(min-width: 1200px)
+        padding-top: 12px
+        padding-bottom: 12px
+
+    .header__menu.is-open
+      height: calc(100vh - 79px)
+      top: 78px
+
+    .header__logo-block
+      @media(min-width: 768px)
+        margin-bottom: 8px
+
+  &__inner
+    background-color: #fff
+    border-bottom: 10px solid #6bc92b
+    display: flex
+    justify-content: space-between
+    left: 0
+    max-width: 100%
+    padding-top: 18px
+    padding-bottom: 17px
+    position: fixed
+    transition: padding 0.3s
+    top: 0
+    width: 100%
+
+    @media(min-width: 768px)
+      border-bottom-width: 20px
+      display: block
+      padding-top: 28px
+      padding-bottom: 30px
+
+    @media(min-width: 1900px)
+      padding-top: 62px
+      padding-bottom: 35px
+
+  &__logo-block
+    text-align: center
+    transition: margin-bottom 0.3s
+    width: 146px
+
+    @media(min-width: 768px)
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 25px
+
+    @media(min-width: 1200px)
+      width: 187px
+
+    @media(min-width: 1900px)
+      margin-bottom: 65px
+
+  &__logo
+    border-bottom: 1px solid #555
+    display: block
+    min-height: 33px
+    margin-bottom: 5px
+    padding-bottom: 6px
+
+    @media(min-width: 1200px)
+      min-height: 40px
+
+  &__phone
+    color: #111
+    display: block
+    font-size: 15px
+    font-weight: 500
+    line-height: 1
+    text-decoration: none
+
+    @media(min-width: 1200px)
+      font-size: 19px
+
+  &__menu-opener
+    background-color: transparent
+    border: none
+    cursor: pointer
+    height: 30px
+    margin-top: 9px
+    padding: 0
+    text-align: center
+    width: 30px
+
+    @media (min-width: 768px)
+      display: none
+
+    span
+      background-color: #000
+      display: inline-block
+      height: 2px
+      position: relative
+      vertical-align: middle
+      width: 30px
+
+      &::after,
+      &::before
+        background-color: #000
+        content: ""
+        height: 2px
+        left: 0
+        position: absolute
+        width: 30px
+
+      &::before
+        top: -8px
+
+      &::after
+        top: 8px
+
+    &.is-active
+      z-index: 100
+
+      span
+        transform: rotate(45deg)
+
+        &::before
+          top: 0
+          transform: rotate(-90deg)
+
+        &::after
+          display: none
+
+  &__menu
+    background-color: #6bc92b
+    display: none
+    height: calc(100vh - 97px)
+    left: 0
+    overflow-y: auto
+    padding-top: 8px
+    position: absolute
+    top: 97px
+    width: 100%
+
+    @media(min-width: 768px)
+      background: none
+      display: block
+      height: auto
+      padding-top: 0
+      position: static
+      top: auto
+
+    &.is-open
+      display: block
+
+      @media(min-width: 768px)
+        background: none
+        display: block
+        height: auto
+        padding-top: 0
+        position: static
+        top: auto
+
+  &__menu-list
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      justify-content: center
+
+  &__menu-link
+    color: #fff
+    font-weight: 500
+    display: block
+    padding: 13px 20px 14px
+    text-decoration: none
+
+    &:hover
+      text-decoration: underline
+
+    @media(min-width: 768px)
+      color: #060606
+      margin-left: 28px
+      margin-right: 28px
+      padding: 0
+
+    @media(min-width: 820px)
+      margin-left: 32px
+      margin-right: 32px
+
+    @media(min-width: 860px)
+      margin-left: 35px
+      margin-right: 35px
+
+    &:last-child
+      @media(min-width: 768px)
+        margin-right: 0
+
+      &::after
+        @media(min-width: 768px)
+          display: none
+
+    &:first-child
+      @media(min-width: 768px)
+        margin-left: 0
+
+  &__menu-separator
+    background: #000
+    height: 13px
+    display: none
+    width: 1px
+
+    @media(min-width: 768px)
+      display: block

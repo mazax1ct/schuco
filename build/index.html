@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>SCHUCO - Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#00e0b4">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="css/style.css?v1" />
+  </head>
+  <body>
+    <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="arrow_left" viewBox="0 0 18 18">
+        <path d="M9.9,0L2.8,7.2h0L1,9l8.9,9l1.8-1.8l-5.8-5.9H17V7.7H5.8l5.8-5.9L9.9,0z"/>
+      </symbol>
+      <symbol id="arrow_right" viewBox="0 0 18 18">
+        <path d="M8.1,18l7.1-7.2h0L17,9L8.1,0L6.4,1.8l5.8,5.9H1v2.5h11.2l-5.8,5.9L8.1,18z"/>
+      </symbol>
+      <symbol id="cup" viewBox="0 0 118 118">
+        <path d="M99.6,26.5c-1.7,10.6-8.5,20-18.1,25.1c-0.9,2.1-1.9,4.1-3,5.9c-3.5,5.8-7.8,9.8-12.5,11.8c-0.5,4.9,2.8,9.6,7.7,10.7c0,0,0,0,0,0c1,0.2,1.7,1.1,1.7,2.1v10h4.1c3.6,0,6.6,2.9,6.6,6.5v5.2c0,1.2-1,2.2-2.2,2.2H34.3c-1.2,0-2.2-1-2.2-2.2v-5.2c0-3.6,3-6.5,6.6-6.5h4.1v-10c0-1,0.7-1.9,1.7-2.1c0,0,0,0,0,0c5-1.1,8.2-5.7,7.7-10.6c-4.8-2-9.2-6-12.7-11.9c-1.1-1.8-2.1-3.8-3-5.9c-9.6-5.1-16.3-14.5-18.1-25.1c-0.3-1.9,0.2-3.9,1.5-5.4c1.3-1.5,3.2-2.4,5.2-2.4h6.6v-2.1c0-2.5,2.1-4.6,4.7-4.6h45c2.6,0,4.7,2.1,4.7,4.6v2.1h6.6c2,0,3.9,0.9,5.2,2.4C99.3,22.6,99.9,24.6,99.6,26.5z M38.7,96.5c-1.2,0-2.2,1-2.2,2.2v3h45.3v-3c0-1.2-1-2.2-2.2-2.2H38.7z M47.1,84.3v7.8h24v-7.8H47.1z M65.3,80c-2.3-2.5-3.7-5.9-3.8-9.4c-0.8,0.1-1.7,0.2-2.6,0.2c-0.8,0-1.6-0.1-2.4-0.2c0,2.6-0.8,5.2-2.3,7.5c-0.4,0.7-0.9,1.3-1.5,1.9H65.3z M31.9,27v-4h-6.6c-0.7,0-1.4,0.3-1.9,0.9c-0.5,0.5-0.7,1.2-0.5,1.9c1.2,7.6,5.4,14.4,11.4,19.1C32.7,39.4,31.9,33.3,31.9,27z M81.8,16.6c0-0.1-0.1-0.3-0.3-0.3h-45c-0.1,0-0.3,0.1-0.3,0.3V27c0,10.7,2.5,20.8,7,28.3c4.3,7.2,9.9,11.1,15.8,11.1c5.9,0,11.5-3.9,15.8-11.1c4.5-7.5,7-17.6,7-28.3V16.6z M94.7,23.9c-0.5-0.6-1.2-0.9-1.9-0.9h-6.6v4c0,6.3-0.8,12.4-2.3,17.9c6-4.7,10.2-11.6,11.4-19.1C95.3,25.1,95.1,24.4,94.7,23.9z M67,41.2l1.1,6.5c0.1,0.8-0.2,1.6-0.9,2.1c-0.4,0.3-0.8,0.4-1.3,0.4c-0.3,0-0.7-0.1-1-0.3L59,46.9L53.1,50c-0.7,0.4-1.6,0.3-2.3-0.2c-0.7-0.5-1-1.3-0.9-2.1l1.1-6.5l-4.8-4.6c-0.6-0.6-0.8-1.4-0.6-2.2c0.3-0.8,0.9-1.4,1.8-1.5l6.6-1l3-5.9c0.4-0.7,1.1-1.2,2-1.2c0.8,0,1.6,0.5,2,1.2l3,5.9l6.6,1c0.8,0.1,1.5,0.7,1.8,1.5c0.3,0.8,0,1.7-0.6,2.2L67,41.2z M62.2,36c-0.7-0.1-1.3-0.5-1.7-1.2l-1.5-3l-1.5,3c-0.3,0.6-0.9,1.1-1.7,1.2l-3.4,0.5l2.4,2.4c0.5,0.5,0.8,1.2,0.6,1.9L55,44.1l3-1.6c0.3-0.2,0.7-0.2,1-0.2c0.4,0,0.7,0.1,1,0.2l3,1.6l-0.6-3.3c-0.1-0.7,0.1-1.4,0.6-1.9l2.4-2.4L62.2,36z"/>
+      </symbol>
+      <symbol id="drill" viewBox="0 0 118 118">
+        <path d="M106.3,51.8l1.1,15.9V83l3.4,10.2c0.3,0.3,0.4,0.8,0.4,1.3v7.7c0,2.1-1.7,3.8-3.9,3.8h-29c-2.1,0-3.9-1.7-3.9-3.8v-7.6c0-0.2,0-0.3,0-0.5c0.1-0.6,0.4-1,0.9-1.3l10.7-10.6V70h-3.9c-1,0-1.7-0.6-1.9-1.5l-3.2-14.4c-4.7-0.3-9.1-0.8-12.7-1.7l-19.2-2.9c-2-0.3-3.7-1.2-4.9-2.5c-1.2-1.1-2-2.6-2.4-4.2h-8c-4.3,0-7.7-3.4-7.7-7.7H2.8c-1.2,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9h19.4c0-4.2,3.5-7.7,7.7-7.7h8c0.8-3.4,3.5-6,7.1-6.5l9.7-1.5c0,0,0,0,0,0l3.6-0.6c2.5-0.4,5-1,7.6-1.3l1.7-0.4c10.8-2.1,26.5-1.5,37.4,1c7.2,1.9,12,8,12,15.1V37C117.1,43.7,112.7,49.7,106.3,51.8z M37.7,27.5H30c-2.1,0-3.9,1.7-3.9,3.8v3.8c0,2.1,1.7,3.8,3.9,3.8h7.7V27.5z M53.2,19.8L45.8,21c-2.5,0.2-4.3,2.3-4.3,4.6v15.3c0,2.3,1.7,4.4,4.1,4.8l7.6,1.1V19.8z M78.4,102.2h29l0,0v-5.7h-29V102.2z M81.1,92.6h25.6l-2.5-7.7H88.8L81.1,92.6z M103.5,81.1V67.7l-1-15c-3.8,0.7-8.1,1.2-12.6,1.4v14v13H103.5z M83.8,66.2h2.3V54.7c-1.5,0-3.3,0-4.8,0L83.8,66.2z M113,29.4c0-5.4-3.7-10-8.9-11.3C98.5,16.5,90.8,16,83.4,16c-5.4,0-10.5,0.4-14.7,1.1l-1.7,0.4c-2.5,0.6-5.2,1-7.7,1.3l-2.1,0.3v28.2l7.9,1.2c10.6,2.7,28.1,2.5,38.9-0.2c5.4-1.3,9.1-5.9,9.1-11.3l0,0V29.4z M101.6,35.1H90c-1.2,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9h11.6c1.2,0,1.9,0.8,1.9,1.9S102.8,35.1,101.6,35.1z M101.6,27.5H90c-1.2,0-1.9-0.8-1.9-1.9c0-1.1,0.8-1.9,1.9-1.9h11.6c1.2,0,1.9,0.8,1.9,1.9C103.5,26.7,102.8,27.5,101.6,27.5z"/>
+      </symbol>
+      <symbol id="gears" viewBox="0 0 118 118">
+        <path d="M116.3,42.3l-5.9,1.3c-0.1,1.2-0.3,2.4-0.6,3.6l5.1,3.3c0,0,0.1,0,0.1,0.1c1,0.7,1.2,2,0.6,3l-5.9,9.2c-0.6,1-2,1.3-3,0.6l-5.2-3.4c-0.9,0.7-1.9,1.4-2.9,2l1.3,6c0.3,1.1-0.3,2.3-1.4,2.6l-10.7,2.3h-0.5c-1,0-1.9-0.7-2.1-1.7l-1.3-6.1c-1.1-0.1-2.3-0.3-3.4-0.6L77,69.8c-0.6,1-2,1.3-3,0.6l-9.2-5.9c-1-0.6-1.3-2-0.6-3l3.4-5.4c-0.7-0.9-1.4-1.8-2-2.7l-6.2,1.4c-1.2,0.3-2.3-0.5-2.6-1.6l-2.3-10.8c-0.3-1.2,0.5-2.3,1.6-2.6l6.2-1.4c0.1-1.1,0.3-2.2,0.6-3.3l-5.4-3.4c-1-0.6-1.3-2-0.6-3l6-9.2c0.6-1,2-1.3,3-0.6l5.3,3.4c0.9-0.7,1.8-1.4,2.8-2l-1.5-6.1c-0.3-1.2,0.5-2.3,1.6-2.6l10.7-2.3c0,0,0.1,0,0.1,0c1.2-0.3,2.3,0.5,2.6,1.6l1.3,6c1.2,0.1,2.3,0.3,3.5,0.6l3.3-5.2c0.6-1,2-1.3,3-0.6l9.2,6c1,0.6,1.3,2,0.6,3l-3.3,5.1c0.8,0.9,1.5,1.9,2.1,3l5.9-1.3c1.2-0.3,2.3,0.5,2.6,1.6l2.3,10.6c0,0,0,0.1,0,0.1C118.2,40.9,117.4,42,116.3,42.3z M111.8,32.1l-5.4,1.2c-1,0.2-1.9-0.3-2.4-1.1c-0.8-1.7-1.9-3.3-3.2-4.7c-0.7-0.7-0.8-1.8-0.3-2.6l3-4.6l-5.6-3.6l-3,4.7c-0.5,0.8-1.5,1.2-2.5,0.9c-1.8-0.6-3.7-0.9-5.6-1c-1,0-1.9-0.7-2.1-1.7l-1.2-5.5l-6.4,1.4l1.2,5.6c0.2,1-0.3,1.9-1.1,2.4c-1.7,0.9-3.2,1.9-4.5,3.2c-0.7,0.7-1.8,0.8-2.6,0.2l-4.7-3.1l-3.6,5.6l4.9,3.1c0.8,0.5,1.2,1.5,0.9,2.5c-0.6,1.8-1,3.6-1.2,5.5c0,1-0.7,1.8-1.7,2L59,43.6l1.4,6.5l5.7-1.2c1-0.2,1.9,0.3,2.4,1.1c0.8,1.7,1.9,3.2,3.1,4.5c0.7,0.7,0.8,1.8,0.2,2.6l-3,4.9l5.6,3.6l3.1-4.9c0.4-0.6,1.1-1,1.8-1c0.2,0,0.5,0,0.7,0.1c1.8,0.6,3.6,1,5.5,1c1,0,1.8,0.7,2,1.7l1.2,5.6l6.4-1.4L94,61.3c-0.2-1,0.3-2,1.2-2.4c1.7-0.8,3.3-1.9,4.7-3.2c0.7-0.7,1.8-0.8,2.6-0.2l4.7,3l3.6-5.6l-4.6-3c-0.8-0.5-1.2-1.6-0.9-2.5c0.6-1.8,1-3.7,1-5.7c0-1,0.7-1.8,1.7-2l5.3-1.3L111.8,32.1z M86.2,53.1c-6.6,0-12-5.4-12-12.1c0-6.7,5.4-12.1,12-12c5.7,0,10.6,3.9,11.7,9.5c0.2,0.8,0.3,1.7,0.3,2.6C98.2,47.7,92.9,53.1,86.2,53.1z M86.2,33.3c-0.6,0-1.1,0.1-1.7,0.2c-4.2,0.9-6.8,5.1-5.9,9.2c1,4.1,5,6.8,9.2,5.9h0c3.6-0.8,6.1-3.9,6.1-7.6C93.9,36.8,90.5,33.3,86.2,33.3z M57.3,62.1L53,66.4c0.5,1.1,1,2.2,1.4,3.4h6c1.2,0,2.1,1,2.1,2.2v11c0,1.2-1,2.2-2.1,2.2h-6c-0.4,1.2-0.8,2.3-1.4,3.4l4.3,4.3c0.8,0.8,0.8,2.2,0,3l-7.7,7.7c-0.8,0.8-2.2,0.8-3,0l-4.3-4.3c-1.1,0.5-2.2,1-3.3,1.3v6.2c0,1.2-1,2.2-2.1,2.2H25.9c-1.2,0-2.1-1-2.1-2.2v-6.3c-1.1-0.4-2.1-0.8-3.2-1.3l-4.4,4.5c-0.8,0.8-2.2,0.8-3,0l-7.7-7.7c-0.8-0.8-0.8-2.2,0-3l4.5-4.6c-0.5-1-0.9-2.1-1.3-3.1H2.1C1,85,0,84.1,0,82.9v-11c0-1.2,1-2.2,2.1-2.2h6.4c0.4-1.1,0.8-2.1,1.3-3.1l-4.5-4.5c-0.8-0.8-0.8-2.2,0-3l7.7-7.7c0.8-0.8,2.2-0.8,3,0l4.5,4.5c1-0.5,2.1-1,3.2-1.3v-6.3c0-1.2,1-2.2,2.1-2.2h11c1.2,0,2.1,1,2.1,2.2v6c1.1,0.4,2.2,0.8,3.3,1.3l4.3-4.3c0.8-0.8,2.2-0.8,3,0l7.7,7.7C58.2,59.9,58.2,61.3,57.3,62.1z M48.8,64.7l3.9-3.9L48.1,56l-3.9,4c-0.7,0.7-1.8,0.8-2.6,0.3c-1.6-1-3.4-1.7-5.3-2.2c-1-0.2-1.7-1.1-1.6-2.2v-5.6H28v5.7c0,1-0.6,1.9-1.6,2.2c-1.8,0.5-3.5,1.2-5.1,2.2c-0.8,0.5-1.9,0.4-2.6-0.3L14.6,56l-4.7,4.7l4.1,4.1c0.7,0.6,1,1.7,0.5,2.6c-0.9,1.6-1.7,3.3-2.1,5.1c-0.3,1-1.1,1.6-2.1,1.6H4.3v6.7H10c1,0,1.9,0.6,2.1,1.6c0.5,1.8,1.2,3.5,2.1,5.1c0.5,0.8,0.3,1.9-0.3,2.6l-4.1,4.1l4.7,4.6l4.1-4.1c0.7-0.7,1.8-0.8,2.6-0.3c1.6,1,3.3,1.7,5.1,2.2c1,0.3,1.6,1.1,1.6,2.2v5.7h6.6v-5.6c0-1,0.7-1.9,1.6-2.2c1.8-0.5,3.6-1.2,5.3-2.2c0.8-0.5,1.9-0.3,2.6,0.3l3.9,3.9l4.7-4.7l-3.9-3.9c-0.7-0.7-0.8-1.8-0.3-2.6c1-1.7,1.7-3.4,2.1-5.3c0.3-1,1.1-1.6,2.1-1.6h5.5v-6.5h-5.5c-1,0-1.9-0.6-2.1-1.6c-0.5-1.9-1.2-3.6-2.1-5.3C48,66.4,48.2,65.4,48.8,64.7z M31.3,89.6c-6.6,0-12-5.4-12-12.1c0-6.7,5.4-12.1,12-12.1c6.6,0,12,5.4,12,12.1C43.4,84.2,38,89.6,31.3,89.6z M31.3,69.8c-4.3,0-7.7,3.5-7.7,7.7c0,4.3,3.5,7.7,7.7,7.7v-0.1c4.2,0,7.7-3.4,7.7-7.7C39.1,73.2,35.6,69.8,31.3,69.8z"/>
+      </symbol>
+      <symbol id="guarantee" viewBox="0 0 118 118">
+        <path d="M98.4,95.9c-0.3,0.9-1.3,1.3-2.2,1l-11.5-4.6L83,104.6c-0.1,0.5-0.3,1-0.8,1.2c-0.8,0.4-1.8,0.2-2.3-0.6L65.4,80c-2.1,0.4-4.3,0.6-6.5,0.6c-2.2,0-4.4-0.2-6.5-0.6l-14.5,25.2c-0.5,0.8-1.5,1.1-2.3,0.6c-0.5-0.2-0.7-0.7-0.8-1.2L33,92.3l-11.5,4.6c-0.9,0.3-1.8-0.1-2.2-1c-0.2-0.6-0.1-1.1,0.2-1.5l14.4-24.9c-5.6-6.1-9-14.2-9-23.2c0-9.5,3.8-18,10-24.2C41.1,15.9,49.6,12,59,12s18,3.9,24.1,10.1c6.2,6.2,10,14.7,10,24.2c0,8.9-3.4,17-9,23.2l14.4,24.9C98.8,94.8,98.9,95.3,98.4,95.9z M24.8,91.9l8.9-3.5c0.2-0.1,0.3-0.2,0.5-0.2c1-0.1,1.8,0.6,1.9,1.4l1.4,9.6L49.1,79c-4.8-1.4-9.1-3.9-12.8-7.2L24.8,91.9z M89.7,46.2c0-8.5-3.4-16.2-9-21.8c-5.5-5.5-13.2-9-21.7-9c-8.5,0-16.2,3.5-21.7,9.2c-5.5,5.5-9,13.3-9,21.8s3.4,16.2,9,21.8c5.5,5.5,13.2,9,21.7,9c8.5,0,16.2-3.5,21.7-9.2C86.3,62.4,89.7,54.7,89.7,46.2z M81.7,71.8c-3.6,3.2-7.9,5.7-12.8,7.2l11.5,20.2l1.4-9.6c0.2-1,1-1.6,1.9-1.4c0.2,0,0.3,0.1,0.5,0.2l8.9,3.5L81.7,71.8z M77.9,65.2C73.1,70,66.4,73,59,73c-7.4,0-14-3-18.8-7.8c-4.8-4.8-7.8-11.5-7.8-18.9s3-14.1,7.8-18.9c4.8-4.8,11.5-7.8,18.8-7.8c7.4,0,14,3,18.8,7.8c4.8,4.8,7.8,11.5,7.8,18.9S82.7,60.3,77.9,65.2z M75.5,29.7c-4.2-4.2-10-6.8-16.4-6.8c-6.4,0-12.3,2.7-16.4,6.9c-4.2,4.2-6.8,10.1-6.8,16.5c0,6.4,2.6,12.2,6.8,16.5c4.2,4.2,10,6.8,16.4,6.8c6.4,0,12.3-2.6,16.5-6.8c4.2-4.2,6.7-10.1,6.7-16.6C82.3,39.7,79.7,34,75.5,29.7z"/>
+      </symbol>
+      <symbol id="shield" viewBox="0 0 118 118">
+        <path d="M86.5,84.7c-6.3,9.4-15.2,16.6-25.5,20.9c-0.6,0.3-1.3,0.4-2,0.4s-1.3-0.1-2-0.4c-10.3-4.3-19.2-11.5-25.5-20.9C25,75,21.6,63.7,21.6,52V26.7c0-2.4,1.6-4.5,3.8-5.1l30.1-9c2.3-0.7,4.8-0.7,7.1,0l30.1,9c2.2,0.7,3.8,2.8,3.8,5.1V52C96.4,63.7,93,75,86.5,84.7z M92.2,26.7c0-0.5-0.3-0.9-0.8-1l-30.1-9c-0.8-0.2-1.6-0.4-2.4-0.4c-0.8,0-1.6,0.1-2.4,0.4l-30.1,9c-0.4,0.1-0.8,0.6-0.8,1V52c0,10.9,3.2,21.3,9.2,30.2c5.9,8.7,14,15.4,23.6,19.4c0.3,0.1,0.5,0.1,0.8,0C69,97.7,77.2,91,83,82.3c6-8.9,9.2-19.4,9.2-30.2V26.7z M60.5,92.6c-0.5,0.2-1,0.4-1.5,0.4c-0.5,0-1-0.1-1.5-0.4c-6.3-3.4-11.8-8.3-16-14.3c-5.3-7.7-8.1-16.8-8.1-26.3V34.1c0-1.4,0.9-2.7,2.3-3.1l22.4-6.7c0.6-0.2,1.2-0.2,1.8,0L82.3,31c1.3,0.4,2.3,1.7,2.3,3.1V52c0,9.5-2.8,18.6-8.1,26.3C72.3,84.3,66.8,89.2,60.5,92.6z M80.4,34.9L59,28.5l-21.4,6.4V52c0,8.6,2.6,16.8,7.4,23.8c3.6,5.3,8.5,9.7,14,12.7c5.5-3,10.3-7.4,14-12.7c4.8-7,7.4-15.2,7.4-23.8V34.9z"/>
+      </symbol>
+    </svg>
+    <div id="top" class="wrapper">
+      <header class="header">
+        <div class="header__inner container">
+          <div class="header__logo-block">
+            <a class="header__logo" href="#top"><img src="images/logo.jpg" alt="SHUCO"></a>
+            <a class="header__phone" href="tel:+78124254242">+7 812 425-4242</a>
+          </div>
+          <button class="js-menu-opener header__menu-opener" type="button"><span></span></button>
+          <div class="header__menu">
+            <nav class="header__menu-list">
+              <a class="header__menu-link" href="#windows">ОКНА</a>
+              <span class="header__menu-separator"></span>
+              <a class="header__menu-link" href="#calc">КАЛЬКУЛЯТОР</a>
+              <span class="header__menu-separator"></span>
+              <a class="header__menu-link" href="#why">ПОЧЕМУ МЫ</a>
+              <span class="header__menu-separator"></span>
+              <a class="header__menu-link" href="#photos">ГАЛЕРЕЯ</a>
+              <span class="header__menu-separator"></span>
+              <a class="header__menu-link" href="#reviews">ОТЫВЫ</a>
+              <span class="header__menu-separator"></span>
+              <a class="header__menu-link" href="#video">ВИДЕО</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="main-banner">
+        <img class="main-banner__image" src="images/content/banner.jpg" alt="">
+      </div>
+      <div id="windows" class="profiles">
+        <div class="container">
+          <div class="js-profiles profiles-slider">
+            <div class="profiles-slider__slide">
+              <div class="profile-card">
+                <img src="images/content/img1.jpg" alt="">
+                <div class="profile-card__description">
+                  <p class="profile-card__top">
+                    <span class="profile-card__title">AWS 70.HI</span>
+                    <span class="profile-card__price">от 250$ / m2</span>
+                  </p>
+                  <ul class="profile-card__list">
+                    <li>Высококачественная теплоизоляция</li>
+                    <li>Высочайшая надёжность</li>
+                    <li>Створки весом до 160 кг</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="profiles-slider__slide">
+              <div class="profile-card">
+                <img src="images/content/img2.jpg" alt="">
+                <div class="profile-card__description">
+                  <p class="profile-card__top">
+                    <span class="profile-card__title">ASS 80 FD.HI</span>
+                    <span class="profile-card__price">от 250$ / m2</span>
+                  </p>
+                  <ul class="profile-card__list">
+                    <li>Высококачественная теплоизоляция</li>
+                    <li>Многообразие дизайнерских решений</li>
+                    <li>Высочайшая надёжность</li>
+                    <li>Створки весом до 160 кг</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="profiles-slider__slide">
+              <div class="profile-card">
+                <img src="images/content/img3.jpg" alt="">
+                <div class="profile-card__description">
+                  <p class="profile-card__top">
+                    <span class="profile-card__title">AWS 120 CC.SI</span>
+                    <span class="profile-card__price">от 250$ / m2</span>
+                  </p>
+                  <ul class="profile-card__list">
+                    <li>Высококачественная теплоизоляция</li>
+                    <li>Высочайшая надёжность</li>
+                    <li>Створки весом до 160 кг</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="calc" class="calc-block">
+        <div class="container">
+          <h1>Выберите тип конструкции для предварительного расчета</h1>
+          <div class="calc">
+            <div class="calc__windows">
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner is-active">
+                  <img src="images/types/type_1.jpg" alt="">
+                </div>
+              </div>
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner">
+                  <img src="images/types/type_2.jpg" alt="">
+                </div>
+              </div>
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner">
+                  <img src="images/types/type_3.jpg" alt="">
+                </div>
+              </div>
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner">
+                  <img src="images/types/type_4.jpg" alt="">
+                </div>
+              </div>
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner">
+                  <img src="images/types/type_5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="calc__form-block">
+              <div class="calc__form">
+                <p class="calc__form-title">Одновстворчатое окно</p>
+                <div class="calc__form-group calc__form-row">
+                  <div>
+                    <p class="calc__form-subtitle">Выберите необходимые размеры окна, мм:</p>
+                    <div class="calc__form-group2">
+                      <div class="cell">
+                        <p>Ширина:</p>
+                        <select class="js-styler calc__form-width">
+                          <option>1500</option>
+                          <option>2000</option>
+                          <option>2500</option>
+                        </select>
+                      </div>
+                      <div class="cell">
+                        <p>Высота:</p>
+                        <select class="js-styler calc__form-width">
+                          <option>2050</option>
+                          <option>2100</option>
+                          <option>2150</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calc__form-qnt">
+                    <p>Количество:</p>
+                    <input class="js-styler" min="0" max="99" step="1" type="number" value="1">
+                  </div>
+                </div>
+                <div class="calc__form-row">
+                  <p class="calc__form-subtitle">Стеклопакет:</p>
+                  <select class="js-styler">
+                    <option>Однокамерный - энергосберегающий</option>
+                    <option>Двухкамерный - энергосберегающий</option>
+                    <option>Трёхкамерный - энергосберегающий</option>
+                  </select>
+                </div>
+                <div class="calc__form-row">
+                  <p class="calc__form-subtitle">Профиль:</p>
+                  <select class="js-styler">
+                    <option>Gealan S300 iQ (GER)</option>
+                    <option>Gealan S300 iQ (GER)</option>
+                    <option>Gealan S300 iQ (GER)</option>
+                  </select>
+                </div>
+                <div class="calc__form-row">
+                  <p class="calc__form-subtitle">Подоконник Moller (Германия), мм:</p>
+                  <select class="js-styler">
+                    <option>200</option>
+                    <option>300</option>
+                    <option>400</option>
+                  </select>
+                </div>
+              </div>
+              <button class="calc__button" type="button">Отправить заявку на рассчет</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="why" class="features">
+        <div class="container">
+          <h2>Пять наших фирменных ацентов</h2>
+          <div class="js-features features-slider">
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">1</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#gears"/></svg></div>
+                <p class="feature__text">Качественная немецкая технология производства, проверенная временем</p>
+              </div>
+            </div>
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">2</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#guarantee"/></svg></div>
+                <p class="feature__text">10-летняя гарантия на изделия и комплектующие</p>
+              </div>
+            </div>
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">3</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#shield"/></svg></div>
+                <p class="feature__text">Современные - энергоэффективные и безопасные стеклопакеты</p>
+              </div>
+            </div>
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">4</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#drill"/></svg></div>
+                <p class="feature__text">Монтаж в соответствии с немецкими и российскими стандартами</p>
+              </div>
+            </div>
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">5</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#cup"/></svg></div>
+                <p class="feature__text">Опыт реализации объемных и сложных задач</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="photos" class="gallery-block">
+        <div class="container">
+          <h2>Монтаж окон</h2>
+          <div class="gallery">
+            <div class="gallery__item">
+              <a href="images/content/img4.jpg" data-fancybox="gallery">
+                <img src="images/content/img4.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img5.jpg" data-fancybox="gallery">
+                <img src="images/content/img5.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img6.jpg" data-fancybox="gallery">
+                <img src="images/content/img6.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img7.jpg" data-fancybox="gallery">
+                <img src="images/content/img7.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img8.jpg" data-fancybox="gallery">
+                <img src="images/content/img8.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img9.jpg" data-fancybox="gallery">
+                <img src="images/content/img9.jpg" alt="image">
+              </a>
+            </div>
+          </div>
+          <h2>Объекты</h2>
+          <div class="js-objects objects-slider">
+            <div class="objects-slider__slide">
+              <a href="images/content/img10.jpg" data-fancybox="objects">
+                <img src="images/content/img10.jpg" alt="image">
+              </a>
+            </div>
+            <div class="objects-slider__slide">
+              <a href="images/content/img11.jpg" data-fancybox="objects">
+                <img src="images/content/img11.jpg" alt="image">
+              </a>
+            </div>
+            <div class="objects-slider__slide">
+              <a href="images/content/img12.jpg" data-fancybox="objects">
+                <img src="images/content/img12.jpg" alt="image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="reviews" class="reviews">
+        <div class="container">
+          <h2>Отзывы архитекторов</h2>
+          <div class="js-reviews reviews-slider">
+            <div class="review">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a id="video" class="video" href="https://www.youtube.com/watch?v=8xjMOu5BBko" data-fancybox="">
+        <img class="video__image" src="images/content/video.jpg" alt="VIDEO">
+      </a>
+    </div>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__top">
+          <p class="footer__site">SCHUCO.OKNAIQ.RU</p>
+          <div class="footer__logo-block">
+            <a class="footer__logo" href="main.html"><img src="images/logo.jpg" alt="SHUCO"></a>
+            <a class="footer__logo-phone" href="tel:+78124254242">+7 812 425-4242</a>
+            <p class="footer__logo-partner">Partner</p>
+          </div>
+          <p class="footer__phone"><a href="tel:+78124254242">+7 812 425-4242</a></p>
+        </div>
+        <div class="footer__bottom">
+          <p>ООО “Завод качественных конструкций”</p>
+          <span class="footer__bottom-separator"></span>
+          <p>Санкт-Петербург, ул.&nbsp;Ропшинская, д.&nbsp;1/32 лит.&nbsp;А</p>
+          <span class="footer__bottom-separator"></span>
+          <p>E-mail: <a href="mailto:4254242@oknaiq.ru">4254242@oknaiq.ru</a></p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

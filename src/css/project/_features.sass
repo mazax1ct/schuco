@@ -1,0 +1,90 @@
+.features
+  background-color: #f2f2f2
+  padding-top: 20px
+  padding-bottom: 20px
+
+  @media(min-width: 768px)
+    padding-top: 40px
+    padding-bottom: 60px
+
+  @media(min-width: 1900px)
+    padding-top: 90px
+    padding-bottom: 100px
+
+.features-slider
+  @media(min-width: 768px)
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    padding-left: 8px
+    padding-right: 8px
+
+  &__slide
+    @media(min-width: 768px)
+      margin-bottom: 16px
+      padding-left: 8px
+      padding-right: 8px
+      width: 33.33%
+
+    @media(min-width: 992px)
+      width: 25%
+
+    @media(min-width: 1200px)
+      margin-bottom: 0
+      width: 20%
+
+.feature
+  background-color: #fff
+  min-height: 306px
+  height: 100%
+  max-width: 270px
+  margin-left: auto
+  margin-right: auto
+  padding: 30px
+  transition: background-color 0.3s, color 0.3s
+
+  @media(min-width: 1200px)
+    font-size: 18px
+
+  &:hover
+    background-color: #78b928
+    color: #fff
+
+    .feature__icon
+      fill: #fff
+
+  &__num
+    color: #f2f2f2
+    font-family: 'Bender', Arial, sans-serif
+    font-size: 80px
+    line-height: 66px
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      font-size: 66px
+      line-height: 52px
+
+  &__icon-block
+    text-align: center
+
+    @media(min-width: 768px)
+      margin-bottom: 35px
+
+    @media(min-width: 1200px)
+      margin-top: 20px
+
+  &__icon
+    fill: #78b928
+    height: 118px
+    transition: fill 0.3s
+    width: 118px
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      height: 100px
+      width: 100px
+
+  &__text
+    line-height: 1.2
+    margin-bottom: 0
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      font-size: 15px

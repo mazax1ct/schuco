@@ -1,0 +1,190 @@
+.jq-number {
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.jq-number__field {
+  width: 100%;
+  border-radius: 4px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+.jq-number__field:hover {
+  border-color: #B3B3B3;
+}
+
+.jq-number__field input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  font: 16px/40px 'Franklin Gothic', Arial, sans-serif;
+  color: #111;
+  text-align: center;
+}
+
+.jq-number__spin {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 40px;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.jq-number__spin.minus {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5IDYiPjxwYXRoIGZpbGw9IiMwMDAiIGQ9Ik05LDFMNS40LDVoMEw0LjUsNkwwLDFsMC45LTFsMy42LDRsMy42LTRMOSwxeiIvPjwvc3ZnPg==);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  top: 0;
+  left: 0;
+}
+
+.jq-number__spin.plus {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5IDYiPjxwYXRoIGZpbGw9IiMwMDAiIGQ9Ik0wLDVsMy42LTRoMGwwLjktMUw5LDVMOC4xLDZMNC41LDJMMC45LDZMMCw1eiIvPjwvc3ZnPg==);
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  top: 0;
+  left: auto;
+  right: 0
+}
+
+.jq-number__spin:hover {}
+
+.jq-number__spin:active {}
+
+.jq-number__spin:after {}
+
+.jq-number__spin.minus:after {}
+
+.jq-number__spin.minus:hover:after {}
+
+.jq-number__spin.plus:hover:after {}
+
+.jq-number.focused .jq-number__field {}
+
+.jq-number.disabled .jq-number__field,
+.jq-number.disabled .jq-number__spin {
+  opacity: 0.6
+}
+
+.jq-number.disabled .jq-number__spin:after {}
+
+.jq-number.disabled .jq-number__spin.minus:after {}
+
+.jq-selectbox {
+  vertical-align: middle;
+  cursor: pointer;
+  width: 100%;
+}
+
+.jq-selectbox__select {
+  height: 40px;
+  padding: 0 38px 0 12px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  font: 16px/40px 'Franklin Gothic', Arial, sans-serif;
+  color: #111;
+}
+
+.jq-selectbox__select:hover {}
+
+.jq-selectbox__select:active {}
+
+.jq-selectbox.focused .jq-selectbox__select {}
+
+.jq-selectbox.disabled .jq-selectbox__select {
+  opacity: 0.6
+}
+
+.jq-selectbox__select-text {
+  display: block;
+  width: 100%;
+}
+
+.jq-selectbox .placeholder {
+  color: #888;
+}
+
+.jq-selectbox__trigger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 100%;
+}
+
+.jq-selectbox__trigger-arrow {
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5IDYiPjxwYXRoIGZpbGw9IiMwMDAiIGQ9Ik05LDFMNS40LDVoMEw0LjUsNkwwLDFsMC45LTFsMy42LDRsMy42LTRMOSwxeiIvPjwvc3ZnPg==) no-repeat 0 0 transparent;
+  position: absolute;
+  top: 17px;
+  right: 14px;
+  width: 9px;
+  height: 6px;
+}
+
+.jq-selectbox:hover .jq-selectbox__trigger-arrow {}
+
+.jq-selectbox.disabled .jq-selectbox__trigger-arrow {}
+
+.jq-selectbox__dropdown {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 2px 0 0;
+  padding: 0;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.11);
+  font: 16px/18px 'Franklin Gothic', Arial, sans-serif;
+}
+
+.jq-selectbox ul {
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.jq-selectbox li {
+  min-height: 18px;
+  padding: 11px 10px 11px;
+  color: #111;
+}
+
+.jq-selectbox li:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.jq-selectbox li:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.jq-selectbox li.selected {
+  background-color: #78b928;
+  color: #fff;
+}
+
+.jq-selectbox li:hover {
+  background-color: #78b928;
+  color: #FFF;
+}
+
+.jq-selectbox li.disabled {}
+
+.jq-selectbox li.disabled:hover {}
+
+.jq-selectbox li.option {
+  padding-left: 25px;
+}

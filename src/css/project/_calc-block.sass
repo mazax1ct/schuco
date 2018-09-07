@@ -1,0 +1,258 @@
+.calc-block
+  background-color: #f2f2f2
+  padding-top: 15px
+  padding-bottom: 15px
+
+  @media(min-width: 768px)
+    background-color: #fff
+    padding-top: 50px
+    padding-bottom: 55px
+
+.calc
+  background-color: #f2f2f2
+
+  @media(min-width: 768px)
+    padding: 20px
+
+  @media(min-width: 1200px)
+    display: flex
+    padding: 30px
+
+  &__windows
+    display: flex
+    flex-wrap: wrap
+    margin-left: -3px
+    margin-right: -3px
+
+    @media(min-width: 768px)
+      margin-bottom: 10px
+      margin-left: -6px
+      margin-right: -6px
+
+    @media(min-width: 1200px)
+      margin-bottom: 0
+      padding-right: 30px
+
+  &__window-block
+    display: flex
+    padding-left: 3px
+    padding-right: 3px
+    margin-bottom: 6px
+
+    @media(min-width: 768px)
+      padding-left: 6px
+      padding-right: 6px
+      margin-bottom: 12px
+
+    &:first-child,
+    &:nth-child(2),
+    &:nth-child(3)
+      width: 33.333%
+
+      img
+        max-width: 92%
+
+    &:nth-child(4),
+    &:nth-child(5)
+      width: 50%
+
+      @media(min-width: 1200px)
+        margin-bottom: 0
+
+      img
+        max-width: 60%
+
+  &__window-block-inner
+    align-items: center
+    background-color: #fff
+    box-shadow: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    text-align: center
+    transition: box-shadow 0.3s
+    position: relative
+    width: 100%
+
+    &:hover,
+    &.is-active
+      box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.11)
+      z-index: 1
+
+      @media(min-width: 768px)
+        box-shadow: 0px 0px 46px 0px rgba(0,0,0,0.29)
+
+      img
+        filter: grayscale(0)
+        opacity: 1
+
+    &.is-active
+      &::after
+        @media(min-width: 768px)
+          border: 38px solid #78b928
+          border-top-color: transparent
+          border-right-color: transparent
+          bottom: 0
+          content: ''
+          height: 0
+          left: 0
+          position: absolute
+          top: auto
+          width: 0
+          z-index: 1
+
+      &::before
+        @media(min-width: 768px)
+          background: url('../images/icons/checked.svg') no-repeat 50% 50% transparent
+          bottom: 10px
+          content: ''
+          height: 25px
+          left: 10px
+          position: absolute
+          top: auto
+          width: 25px
+          z-index: 2
+
+    img
+      filter: grayscale(0.5)
+      opacity: 0.5
+      transition: all 0.3s
+
+  &__form-block
+    @media(min-width: 1200px)
+      display: flex
+      flex-flow: column
+      min-width: 40%
+
+  &__form
+    background-color: #fff
+    flex-grow: 1
+    margin-bottom: 10px
+    padding: 15px
+
+    @media(min-width: 1200px)
+      padding: 25px
+
+  &__form-title
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 20px
+    text-align: center
+
+    @media(min-width: 768px)
+      font-size: 25px
+      text-align: left
+
+  &__form-subtitle
+    font-weight: 500
+    margin-bottom: 15px
+
+  &__form-row
+    margin-bottom: 15px
+
+    @media(min-width: 1200px)
+      margin-bottom: 25px
+
+    &:last-child
+      margin-bottom: 0
+
+  &__form-group
+    @media(min-width: 600px) and (max-width: 1199px)
+      align-items: flex-start
+      display: flex
+      justify-content: space-between
+
+    @media(min-width: 1440px)
+      align-items: flex-start
+      display: flex
+      justify-content: space-between
+
+  &__form-group2
+    align-items: flex-start
+    display: flex
+    flex-wrap: wrap
+    margin-left: -4px
+    margin-right: -4px
+
+    .cell
+      padding-left: 4px
+      padding-right: 4px
+      margin-bottom: 10px
+      width: 50%
+
+      @media(min-width: 600px) and (max-width: 1199px)
+        align-items: center
+        display: flex
+        margin-bottom: 0
+        width: 170px
+
+      @media(min-width: 1440px)
+        align-items: center
+        display: flex
+        margin-bottom: 0
+        width: 170px
+
+      &:first-child
+        @media(min-width: 600px) and (max-width: 1199px)
+          margin-right: 25px
+
+        @media(min-width: 1440px)
+          margin-right: 6px
+
+        @media(min-width: 1500px)
+          margin-right: 25px
+
+    p
+      margin-bottom: 10px
+
+      @media(min-width: 600px) and (max-width: 1199px)
+        margin-bottom: 0
+        margin-right: 12px
+
+      @media(min-width: 1440px)
+        margin-bottom: 0
+        margin-right: 12px
+
+  &__form-width
+    @media(min-width: 600px) and (max-width: 1199px)
+      min-width: 90px
+
+    @media(min-width: 1440px)
+      min-width: 90px
+
+  &__form-qnt
+    width: 100%
+
+    @media(min-width: 600px) and (max-width: 1199px)
+      width: 110px
+
+    @media(min-width: 1440px)
+      width: 110px
+
+    p
+      margin-bottom: 10px
+
+      @media(min-width: 600px) and (max-width: 1199px)
+        font-weight: 500
+        margin-bottom: 15px
+
+      @media(min-width: 1440px)
+        font-weight: 500
+        margin-bottom: 15px
+
+  &__button
+    background-color: #78b928
+    border-radius: 4px
+    border: none
+    color: #fff
+    cursor: pointer
+    display: block
+    font-size: 18px
+    font-weight: 500
+    height: 70px
+    padding: 0
+    text-align: center
+    width: 100%
+
+    @media(min-width: 768px)
+      height: 83px

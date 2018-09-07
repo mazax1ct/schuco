@@ -1,0 +1,17 @@
+.video
+  background-position: 50% 50%
+  background-image: url('../images/content/video.jpg')
+  background-size: auto 100%
+  background-repeat: no-repeat
+  background-color: #2e3345
+  display: block
+  height: 295px
+  text-align: center
+
+  @media(min-width: 700px)
+    background-image: none
+    height: auto
+
+  &__image
+    @media(max-width: 699px)
+      display: none

@@ -1,0 +1,119 @@
+.footer
+  text-align: center
+
+  @media(min-width: 768px)
+    height: 205px
+
+  @media(min-width: 1900px)
+    height: 305px
+
+  &__inner
+    padding-top: 40px
+    padding-bottom: 50px
+
+    @media(min-width: 768px)
+      padding-top: 45px
+      padding-bottom: 0
+
+    @media(min-width: 1900px)
+      padding-top: 85px
+
+  &__top
+    font-weight: 500
+
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+      margin-bottom: 35px
+
+    @media(min-width: 1900px)
+      margin-bottom: 60px
+
+  &__site,
+  &__phone
+    font-weight: 500
+    margin-bottom: 0
+    padding-top: 15px
+
+    @media(max-width: 767px)
+      display: none
+
+  &__logo-block
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 35px
+    text-align: center
+    width: 146px
+
+    @media(min-width: 768px)
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 0
+
+    @media(min-width: 1200px)
+      width: 187px
+
+  &__logo
+    border-bottom: 1px solid #555
+    display: block
+    margin-bottom: 5px
+    padding-bottom: 6px
+
+  &__logo-phone
+    color: #111
+    display: block
+    font-size: 15px
+    font-weight: 500
+    line-height: 1
+    text-decoration: none
+
+    @media(min-width: 768px)
+      display: none
+
+  &__logo-partner
+    @media(max-width: 767px)
+      display: none
+
+  &__bottom
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      font-size: 13px
+      justify-content: center
+
+    @media(min-width: 1200px)
+      font-size: 16px
+
+    p
+      @media(min-width: 768px)
+        margin-bottom: 0
+        margin-left: 10px
+        margin-right: 10px
+
+      @media(min-width: 820px)
+        margin-left: 20px
+        margin-right: 20px
+
+      &:first-child
+        margin-left: 0
+
+      &:last-child
+        margin-right: 0
+
+  &__bottom-separator
+    background: #000
+    height: 13px
+    display: none
+    width: 1px
+
+    @media(min-width: 768px)
+      display: block
+
+  p
+    margin-bottom: 20px
+
+    &:last-child
+      margin-bottom: 0
+
+  a
+    text-decoration: none

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>SCHUCO - Главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/style.html
+  </head>
+  <body>
+    //= template/sprite.html
+    <div id="top" class="wrapper">
+      //= template/header.html
+      <div class="main-banner">
+        <img class="main-banner__image" src="images/content/banner.jpg" alt="">
+      </div>
+      <div id="windows" class="profiles">
+        <div class="container">
+          <div class="js-profiles profiles-slider">
+            <div class="profiles-slider__slide">
+              <div class="profile-card">
+                <img src="images/content/img1.jpg" alt="">
+                <div class="profile-card__description">
+                  <p class="profile-card__top">
+                    <span class="profile-card__title">AWS 70.HI</span>
+                    <span class="profile-card__price">от 250$ / m2</span>
+                  </p>
+                  <ul class="profile-card__list">
+                    <li>Высококачественная теплоизоляция</li>
+                    <li>Высочайшая надёжность</li>
+                    <li>Створки весом до 160 кг</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="profiles-slider__slide">
+              <div class="profile-card">
+                <img src="images/content/img2.jpg" alt="">
+                <div class="profile-card__description">
+                  <p class="profile-card__top">
+                    <span class="profile-card__title">ASS 80 FD.HI</span>
+                    <span class="profile-card__price">от 250$ / m2</span>
+                  </p>
+                  <ul class="profile-card__list">
+                    <li>Высококачественная теплоизоляция</li>
+                    <li>Многообразие дизайнерских решений</li>
+                    <li>Высочайшая надёжность</li>
+                    <li>Створки весом до 160 кг</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="profiles-slider__slide">
+              <div class="profile-card">
+                <img src="images/content/img3.jpg" alt="">
+                <div class="profile-card__description">
+                  <p class="profile-card__top">
+                    <span class="profile-card__title">AWS 120 CC.SI</span>
+                    <span class="profile-card__price">от 250$ / m2</span>
+                  </p>
+                  <ul class="profile-card__list">
+                    <li>Высококачественная теплоизоляция</li>
+                    <li>Высочайшая надёжность</li>
+                    <li>Створки весом до 160 кг</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="calc" class="calc-block">
+        <div class="container">
+          <h1>Выберите тип конструкции для предварительного расчета</h1>
+          <div class="calc">
+            <div class="calc__windows">
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner is-active">
+                  <img src="images/types/type_1.jpg" alt="">
+                </div>
+              </div>
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner">
+                  <img src="images/types/type_2.jpg" alt="">
+                </div>
+              </div>
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner">
+                  <img src="images/types/type_3.jpg" alt="">
+                </div>
+              </div>
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner">
+                  <img src="images/types/type_4.jpg" alt="">
+                </div>
+              </div>
+              <div class="calc__window-block">
+                <div class="calc__window-block-inner">
+                  <img src="images/types/type_5.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="calc__form-block">
+              <div class="calc__form">
+                <p class="calc__form-title">Одновстворчатое окно</p>
+                <div class="calc__form-group calc__form-row">
+                  <div>
+                    <p class="calc__form-subtitle">Выберите необходимые размеры окна, мм:</p>
+                    <div class="calc__form-group2">
+                      <div class="cell">
+                        <p>Ширина:</p>
+                        <select class="js-styler calc__form-width">
+                          <option>1500</option>
+                          <option>2000</option>
+                          <option>2500</option>
+                        </select>
+                      </div>
+                      <div class="cell">
+                        <p>Высота:</p>
+                        <select class="js-styler calc__form-width">
+                          <option>2050</option>
+                          <option>2100</option>
+                          <option>2150</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="calc__form-qnt">
+                    <p>Количество:</p>
+                    <input class="js-styler" min="0" max="99" step="1" type="number" value="1">
+                  </div>
+                </div>
+                <div class="calc__form-row">
+                  <p class="calc__form-subtitle">Стеклопакет:</p>
+                  <select class="js-styler">
+                    <option>Однокамерный - энергосберегающий</option>
+                    <option>Двухкамерный - энергосберегающий</option>
+                    <option>Трёхкамерный - энергосберегающий</option>
+                  </select>
+                </div>
+                <div class="calc__form-row">
+                  <p class="calc__form-subtitle">Профиль:</p>
+                  <select class="js-styler">
+                    <option>Gealan S300 iQ (GER)</option>
+                    <option>Gealan S300 iQ (GER)</option>
+                    <option>Gealan S300 iQ (GER)</option>
+                  </select>
+                </div>
+                <div class="calc__form-row">
+                  <p class="calc__form-subtitle">Подоконник Moller (Германия), мм:</p>
+                  <select class="js-styler">
+                    <option>200</option>
+                    <option>300</option>
+                    <option>400</option>
+                  </select>
+                </div>
+              </div>
+              <button class="calc__button" type="button">Отправить заявку на рассчет</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="why" class="features">
+        <div class="container">
+          <h2>Пять наших фирменных ацентов</h2>
+          <div class="js-features features-slider">
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">1</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#gears"/></svg></div>
+                <p class="feature__text">Качественная немецкая технология производства, проверенная временем</p>
+              </div>
+            </div>
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">2</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#guarantee"/></svg></div>
+                <p class="feature__text">10-летняя гарантия на изделия и комплектующие</p>
+              </div>
+            </div>
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">3</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#shield"/></svg></div>
+                <p class="feature__text">Современные - энергоэффективные и безопасные стеклопакеты</p>
+              </div>
+            </div>
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">4</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#drill"/></svg></div>
+                <p class="feature__text">Монтаж в соответствии с немецкими и российскими стандартами</p>
+              </div>
+            </div>
+            <div class="features-slider__slide">
+              <div class="feature">
+                <div class="feature__num">5</div>
+                <div class="feature__icon-block"><svg class="feature__icon" aria-hidden="true"><use xlink:href="#cup"/></svg></div>
+                <p class="feature__text">Опыт реализации объемных и сложных задач</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="photos" class="gallery-block">
+        <div class="container">
+          <h2>Монтаж окон</h2>
+          <div class="gallery">
+            <div class="gallery__item">
+              <a href="images/content/img4.jpg" data-fancybox="gallery">
+                <img src="images/content/img4.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img5.jpg" data-fancybox="gallery">
+                <img src="images/content/img5.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img6.jpg" data-fancybox="gallery">
+                <img src="images/content/img6.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img7.jpg" data-fancybox="gallery">
+                <img src="images/content/img7.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img8.jpg" data-fancybox="gallery">
+                <img src="images/content/img8.jpg" alt="image">
+              </a>
+            </div>
+            <div class="gallery__item">
+              <a href="images/content/img9.jpg" data-fancybox="gallery">
+                <img src="images/content/img9.jpg" alt="image">
+              </a>
+            </div>
+          </div>
+          <h2>Объекты</h2>
+          <div class="js-objects objects-slider">
+            <div class="objects-slider__slide">
+              <a href="images/content/img10.jpg" data-fancybox="objects">
+                <img src="images/content/img10.jpg" alt="image">
+              </a>
+            </div>
+            <div class="objects-slider__slide">
+              <a href="images/content/img11.jpg" data-fancybox="objects">
+                <img src="images/content/img11.jpg" alt="image">
+              </a>
+            </div>
+            <div class="objects-slider__slide">
+              <a href="images/content/img12.jpg" data-fancybox="objects">
+                <img src="images/content/img12.jpg" alt="image">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="reviews" class="reviews">
+        <div class="container">
+          <h2>Отзывы архитекторов</h2>
+          <div class="js-reviews reviews-slider">
+            <div class="review">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a id="video" class="video" href="https://www.youtube.com/watch?v=8xjMOu5BBko" data-fancybox="">
+        <img class="video__image" src="images/content/video.jpg" alt="VIDEO">
+      </a>
+    </div>
+    //= template/footer.html
+    //= template/scripts.html
+  </body>
+</html>
