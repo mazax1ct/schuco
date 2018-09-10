@@ -30,6 +30,7 @@
     margin-bottom: 10px
     padding-left: 5px
     padding-right: 5px
+    width: 25%
 
     @media(min-width: 1200px)
       padding-left: 10px
@@ -54,18 +55,26 @@
           object-fit: contain
           width: auto
 
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4),
-    &:nth-child(5)
+    &:nth-child(6n-1),
+    &:nth-child(6n-2),
+    &:nth-child(6n-3),
+    &:nth-child(6n-4)
       width: 25%
 
-    &:nth-child(6)
-      display: none
-
+    &:nth-child(6n),
+    &:nth-child(6n+1)
       @media(min-width: 568px)
-        display: block
         width: 50%
+
+      a
+        @media(max-width: 567px)
+          height: 100%
+
+      img
+        @media(max-width: 567px)
+          height: 100%
+          object-fit: cover
+          width: 100%
 
     a
       background-color: #e9f1ff
@@ -206,11 +215,13 @@
           filter: grayscale(0) hue-rotate(0deg)
 
     img
-      height: 100%
-      object-fit: cover
       filter: grayscale(0.8) hue-rotate(170deg)
       transition: filter 0.3s
-      width: 100%
+
+      @media(max-width: 567px)
+        height: 100%
+        object-fit: cover
+        width: 100%
 
   .slick-arrow
     background-color: rgba(0,0,0,0.5)

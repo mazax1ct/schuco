@@ -12,6 +12,127 @@
     padding-bottom: 110px
 
 .reviews-slider
+  max-width: 1200px
+  margin-left: auto
+  margin-right: auto
+
+  .slick-arrow
+    bottom: 25px
+    top: auto
+    transform: translateY(0)
+
+    @media(min-width: 1200px)
+      bottom: 70px
+
+  .slick-arrow--prev
+    left: 15px
+
+    @media(min-width: 1200px)
+      left: 35px
+
+  .slick-arrow--next
+    right: 15px
+
+    @media(min-width: 1200px)
+      right: 35px
+
+  .slick-arrow__icon
+    fill: #b3b3b3
 
 .review
   background-color: #fff
+  padding: 25px
+  position: relative
+
+  @media(min-width: 768px)
+    display: flex
+    min-height: 240px
+    padding-top: 35px
+    padding-bottom: 0
+    padding-right: 45px
+    padding-left: 0px
+
+  &__image
+    text-align: center
+
+    @media(max-width: 767px)
+      bottom: 0
+      left: auto
+      position: absolute
+      right: 10px
+      top: auto
+      width: 90px
+
+    @media(min-width: 768px)
+      min-width: 255px
+
+    @media(min-width: 1200px)
+      min-width: 450px
+
+    img
+      @media(min-width: 768px)
+        max-width: 66.66%
+
+  &__text-block
+    @media(min-width: 768px)
+      display: flex
+      flex-flow: column
+      justify-content: center
+      padding-bottom: 35px
+
+    @media(min-width: 1200px)
+      max-width: 600px
+
+  &__title
+    font-size: 18px
+    margin-bottom: 15px
+    position: relative
+
+    @media(max-width: 767px)
+      padding-top: 65px
+
+    &::before
+      background: url('../images/icons/quotes.png') no-repeat 0 0 transparent
+      content: ''
+      height: 42px
+      left: 0
+      position: absolute
+      top: 0
+      width: 42px
+
+      @media(min-width: 768px)
+        left: -54px
+        top: 50%
+        transform: translateY(-50%)
+
+  &__text
+    color: #9b9b9b
+    font-size: 14px
+    margin-bottom: 40px
+
+    @media(min-width: 768px)
+      font-size: 16px
+      margin-bottom: 25px
+
+  &__bottom
+    @media(min-width: 768px)
+      display: flex
+      justify-content: space-between
+
+    @media(max-width: 767px)
+      font-size: 14px
+      padding-right: 85px
+
+  &__author
+    @media(max-width: 767px)
+      margin-bottom: 15px
+
+    @media(min-width: 768px)
+      order: 2
+      margin-bottom: 0
+
+  &__date
+    margin-bottom: 0
+
+    @media(min-width: 768px)
+      order: 1
