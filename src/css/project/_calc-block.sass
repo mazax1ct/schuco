@@ -12,10 +12,10 @@
   background-color: #f2f2f2
 
   @media(min-width: 768px)
+    display: flex
     padding: 20px
 
   @media(min-width: 1200px)
-    display: flex
     padding: 30px
 
   &__windows
@@ -25,12 +25,11 @@
     margin-right: -3px
 
     @media(min-width: 768px)
-      margin-bottom: 10px
       margin-left: -6px
       margin-right: -6px
+      padding-right: 12px
 
     @media(min-width: 1200px)
-      margin-bottom: 0
       padding-right: 30px
 
   &__window-block
@@ -44,23 +43,37 @@
       padding-right: 6px
       margin-bottom: 12px
 
+    @media(min-width: 1200px)
+      width: 20% !important
+
+    img
+      @media(min-width: 1200px)
+        max-width: 80% !important
+
     &:first-child,
     &:nth-child(2),
-    &:nth-child(3)
+    &:nth-child(3),
+    &:nth-child(6),
+    &:nth-child(7),
+    &:nth-child(8)
       width: 33.333%
 
       img
         max-width: 92%
 
     &:nth-child(4),
-    &:nth-child(5)
+    &:nth-child(5),
+    &:nth-child(9),
+    &:nth-child(10)
       width: 50%
-
-      @media(min-width: 1200px)
-        margin-bottom: 0
 
       img
         max-width: 60%
+
+    &:nth-child(9),
+    &:nth-child(10)
+      @media(min-width: 768px)
+        margin-bottom: 0
 
   &__window-block-inner
     align-items: center
@@ -119,10 +132,16 @@
       transition: all 0.3s
 
   &__form-block
-    @media(min-width: 1200px)
+    @media(min-width: 768px)
       display: flex
       flex-flow: column
+      min-width: 50%
+
+    @media(min-width: 992px)
       min-width: 40%
+
+    @media(min-width: 1200px)
+      min-width: 30%
 
   &__form
     background-color: #fff
@@ -157,12 +176,12 @@
       margin-bottom: 0
 
   &__form-group
-    @media(min-width: 600px) and (max-width: 1199px)
+    @media(min-width: 600px) and (max-width: 767px)
       align-items: flex-start
       display: flex
       justify-content: space-between
 
-    @media(min-width: 1440px)
+    //@media(min-width: 1440px)
       align-items: flex-start
       display: flex
       justify-content: space-between
@@ -174,19 +193,22 @@
     margin-left: -4px
     margin-right: -4px
 
+    @media(min-width: 768px)
+      flex-wrap: nowrap
+
     .cell
       padding-left: 4px
       padding-right: 4px
       margin-bottom: 10px
       width: 50%
 
-      @media(min-width: 600px) and (max-width: 1199px)
+      @media(min-width: 600px) and (max-width: 767px)
         align-items: center
         display: flex
         margin-bottom: 0
         width: 170px
 
-      @media(min-width: 1440px)
+      //@media(min-width: 1440px)
         align-items: center
         display: flex
         margin-bottom: 0
@@ -196,20 +218,23 @@
         @media(min-width: 600px) and (max-width: 1199px)
           margin-right: 25px
 
-        @media(min-width: 1440px)
+        //@media(min-width: 1440px)
           margin-right: 6px
 
-        @media(min-width: 1500px)
+        //@media(min-width: 1500px)
           margin-right: 25px
+
+      .input
+        min-width: 80px
 
     p
       margin-bottom: 10px
 
-      @media(min-width: 600px) and (max-width: 1199px)
+      @media(min-width: 600px) and (max-width: 767px)
         margin-bottom: 0
         margin-right: 12px
 
-      @media(min-width: 1440px)
+      //@media(min-width: 1440px)
         margin-bottom: 0
         margin-right: 12px
 
@@ -223,22 +248,30 @@
   &__form-qnt
     width: 100%
 
-    @media(min-width: 600px) and (max-width: 1199px)
+    @media(min-width: 600px) and (max-width: 767px)
       width: 110px
 
-    @media(min-width: 1440px)
+    //@media(min-width: 1440px)
       width: 110px
 
     p
       margin-bottom: 10px
 
-      @media(min-width: 600px) and (max-width: 1199px)
+      @media(min-width: 600px) and (max-width: 767px)
         font-weight: 500
         margin-bottom: 15px
 
-      @media(min-width: 1440px)
+      //@media(min-width: 1440px)
         font-weight: 500
         margin-bottom: 15px
+
+  &__result
+    font-size: 18px
+    font-weight: 500
+    margin-bottom: 0
+
+    @media(min-width: 768px)
+      font-size: 25px
 
   &__button
     background-color: #78b928
