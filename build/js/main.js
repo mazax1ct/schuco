@@ -155,6 +155,7 @@ $(document).ready(function() {
   $(".calc__window-block-inner").click(function() {
     $(".calc__window-block-inner").removeClass("is-active");
     $(this).addClass("is-active");
+    $('.js-calc__form-image').attr('src', $(this).attr('data-image'));
     return false;
   });
 });
