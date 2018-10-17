@@ -47,7 +47,7 @@
     @media(min-width: 992px)
       width: 25%
 
-    @media(min-width: 1200px)
+    //@media(min-width: 1200px)
       width: 16.666%
 
     img
@@ -66,8 +66,8 @@
       @media(min-width: 992px)
         margin-bottom: 0
 
-    &:nth-last-child(5),
-    &:nth-last-child(6)
+    //&:nth-last-child(5),
+    //&:nth-last-child(6)
       @media(min-width: 1200px)
         margin-bottom: 0
 
@@ -187,7 +187,10 @@
 
   &__form-subtitle
     font-weight: 500
-    margin-bottom: 15px
+    margin-bottom: 10px
+
+    &:last-child
+      margin-bottom: 0
 
   &__form-row
     margin-bottom: 15px
