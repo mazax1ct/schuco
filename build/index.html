@@ -246,12 +246,12 @@
                   <button class="calc__button" type="button">Добавить в заказ</button>
                 </div>
                 <div class="calc__form-row">
-                  <p class="calc__form-subtitle">Окно №1: 50000 руб.</p>
-                  <p class="calc__form-subtitle">Окно №2: 120000 руб.</p>
+                  <p class="calc__form-subtitle">Окно №1: 50000 руб. <button class="calc__form-delete" type="button" title="Удалить">x</button></p>
+                  <p class="calc__form-subtitle">Окно №2: 120000 руб. <button class="calc__form-delete" type="button" title="Удалить">x</button></p>
                   <p class="calc__result">ИТОГО: 170000 руб.</p>
                 </div>
               </div>
-              <button class="calc__button calc__button--big" type="button">Отправить заявку на рассчет</button>
+              <a class="calc__button calc__button--big" href="#popup" data-fancybox='form-popup'>Отправить заявку на рассчет</a>
             </div>
           </div>
         </div>
@@ -450,6 +450,25 @@
         </div>
       </div>
     </footer>
+    <div id="popup" class="popup-form">
+      <div class="popup-form__title-block">
+        <p class="popup-form__title">Заявка на расчет</p>
+        <button class="js-popup-close popup-form__close" type="button" title="Закрыть">x</button>
+      </div>
+      <div class="popup-form__content">
+          <form action="/" method="post">
+            <div class="popup-form__row">
+              <label class="popup-form__label" for="name">Ваше имя</label>
+              <input class="popup-form__input input" id="name" type="text" name="name" value="" placeholder="Ваше имя">
+            </div>
+            <div class="popup-form__row">
+              <label class="popup-form__label" for="phone">Ваш телефон</label>
+              <input class="popup-form__input input" id="phone" type="text" name="phone" value="" placeholder="Ваш телефон">
+            </div>
+            <button class="popup-form__button" type="button">ОТПРАВИТЬ</button>
+          </form>
+      </div>
+    </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>

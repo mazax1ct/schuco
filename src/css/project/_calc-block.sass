@@ -47,14 +47,8 @@
     @media(min-width: 992px)
       width: 25%
 
-    //@media(min-width: 1200px)
-      width: 16.666%
-
     img
       max-width: 80%
-
-      //@media(min-width: 1200px)
-        max-width: 80% !important
 
     &:nth-last-child(1),
     &:nth-last-child(2),
@@ -64,36 +58,6 @@
 
     &:nth-last-child(4)
       @media(min-width: 992px)
-        margin-bottom: 0
-
-    //&:nth-last-child(5),
-    //&:nth-last-child(6)
-      @media(min-width: 1200px)
-        margin-bottom: 0
-
-    //&:first-child,
-    //&:nth-child(2),
-    //&:nth-child(3),
-    //&:nth-child(6),
-    //&:nth-child(7),
-    //&:nth-child(8)
-      width: 33.333%
-
-      //img
-        max-width: 92%
-
-    //&:nth-child(4),
-    //&:nth-child(5),
-    //&:nth-child(9),
-    //&:nth-child(10)
-      width: 50%
-
-      //img
-        max-width: 60%
-
-    //&:nth-child(9),
-    //&:nth-child(10)
-      @media(min-width: 768px)
         margin-bottom: 0
 
   &__window-block-inner
@@ -188,6 +152,8 @@
   &__form-subtitle
     font-weight: 500
     margin-bottom: 10px
+    position: relative
+    z-index: 1
 
     &:last-child
       margin-bottom: 0
@@ -203,11 +169,6 @@
 
   &__form-group
     @media(min-width: 600px) and (max-width: 767px)
-      align-items: flex-start
-      display: flex
-      justify-content: space-between
-
-    //@media(min-width: 1440px)
       align-items: flex-start
       display: flex
       justify-content: space-between
@@ -229,28 +190,6 @@
       margin-bottom: 10px
       width: 50%
 
-      //@media(min-width: 600px) and (max-width: 767px)
-        align-items: center
-        display: flex
-        margin-bottom: 0
-        width: 170px
-
-      //@media(min-width: 1440px)
-        align-items: center
-        display: flex
-        margin-bottom: 0
-        width: 170px
-
-      //&:first-child
-        @media(min-width: 600px) and (max-width: 1199px)
-          margin-right: 25px
-
-        //@media(min-width: 1440px)
-          margin-right: 6px
-
-        //@media(min-width: 1500px)
-          margin-right: 25px
-
       .input
         min-width: 80px
 
@@ -258,10 +197,6 @@
       margin-bottom: 10px
 
       @media(min-width: 600px) and (max-width: 767px)
-        margin-bottom: 0
-        margin-right: 12px
-
-      //@media(min-width: 1440px)
         margin-bottom: 0
         margin-right: 12px
 
@@ -275,20 +210,10 @@
   &__form-qnt
     width: 100%
 
-    //@media(min-width: 600px) and (max-width: 767px)
-      width: 110px
-
-    //@media(min-width: 1440px)
-      width: 110px
-
     p
       margin-bottom: 10px
 
       @media(min-width: 600px) and (max-width: 767px)
-        font-weight: 500
-        margin-bottom: 15px
-
-      //@media(min-width: 1440px)
         font-weight: 500
         margin-bottom: 15px
 
@@ -322,3 +247,34 @@
 
       @media(min-width: 768px)
         height: 83px
+
+    &:disabled,
+    &.disabled
+      background-color: #ccc
+      cursor: default
+      opacity: 0.5
+
+  a.calc__button
+    align-items: center
+    display: flex
+    justify-content: center
+    text-decoration: none
+
+    &.disabled
+      pointer-events: none
+
+  &__form-delete
+    background: none
+    border: none
+    border: 1px solid
+    border-radius: 50%
+    cursor: pointer
+    height: 20px
+    left: auto
+    line-height: 16px
+    padding: 0 0 4px 1px
+    right: 0
+    position: absolute
+    text-align: center
+    top: 0
+    width: 20px
