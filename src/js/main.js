@@ -8,40 +8,21 @@ $(document).ready(function() {
 
   //слайдер профилей
   if ($('.js-profiles').length) {
-    $('.js-profiles').slick({
-      autoplay: false,
-      dots: false,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      mobileFirst: true,
-      prevArrow: '<button class="slick-arrow slick-arrow--prev" aria-label="Назад" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
-      nextArrow: '<button class="slick-arrow slick-arrow--next" aria-label="Вперед" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
+    if($('body').width() < 768){
+      $('.js-profiles').slick({
+        autoplay: false,
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        prevArrow: '<button class="slick-arrow slick-arrow--prev" aria-label="Назад" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
+        nextArrow: '<button class="slick-arrow slick-arrow--next" aria-label="Вперед" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
+
+      });
+    }
+
   }
 
   //слайдер карточек
