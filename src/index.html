@@ -86,122 +86,221 @@
                 </div>
               </div>
             </div>
+            <div class="profiles-slider__slide">
+              <div class="profile-card">
+                <img src="images/content/img2.jpg" alt="">
+                <div class="profile-card__description">
+                  <p class="profile-card__top">
+                    <span class="profile-card__title">ASS 80 FD.HI</span>
+                    <span class="profile-card__price">от 250$ / m2</span>
+                  </p>
+                  <ul class="profile-card__list">
+                    <li>Высококачественная теплоизоляция</li>
+                    <li>Многообразие дизайнерских решений</li>
+                    <li>Высочайшая надёжность</li>
+                    <li>Створки весом до 160 кг</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="profiles-slider__slide">
+              <div class="profile-card">
+                <img src="images/content/img3.jpg" alt="">
+                <div class="profile-card__description">
+                  <p class="profile-card__top">
+                    <span class="profile-card__title">AWS 120 CC.SI</span>
+                    <span class="profile-card__price">от 250$ / m2</span>
+                  </p>
+                  <ul class="profile-card__list">
+                    <li>Высококачественная теплоизоляция</li>
+                    <li>Высочайшая надёжность</li>
+                    <li>Створки весом до 160 кг</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div id="calc" class="calc-block">
         <div class="container">
-          <h1>Выберите тип конструкции для предварительного расчета</h1>
+          <h1>Расчет стоимости вентиляции</h1>
           <div class="calc">
-            <div class="calc__windows">
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner is-active" data-image="images/types/type_1.jpg">
-                  <img src="images/types/type_1.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_2.jpg">
-                  <img src="images/types/type_2.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_3.jpg">
-                  <img src="images/types/type_3.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_4.jpg">
-                  <img src="images/types/type_4.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_5.jpg">
-                  <img src="images/types/type_5.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_1.jpg">
-                  <img src="images/types/type_1.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_2.jpg">
-                  <img src="images/types/type_2.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_3.jpg">
-                  <img src="images/types/type_3.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_4.jpg">
-                  <img src="images/types/type_4.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_5.jpg">
-                  <img src="images/types/type_5.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_4.jpg">
-                  <img src="images/types/type_4.jpg" alt="">
-                </div>
-              </div>
-              <div class="calc__window-block">
-                <div class="calc__window-block-inner" data-image="images/types/type_5.jpg">
-                  <img src="images/types/type_5.jpg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="calc__form-block">
-              <div class="calc__form">
-                <div class="calc__form-image-block">
-                  <img class="js-calc__form-image" src="images/types/type_1.jpg" alt="">
-                </div>
-                <div class="calc__form-row">
-                  <p class="calc__form-subtitle">Выберите необходимые размеры окна, мм:</p>
-                  <div class="calc__form-group2">
-                    <div class="cell">
-                      <p>Ширина:</p>
-                      <input class="input" type="text" value="">
-                    </div>
-                    <div class="cell">
-                      <p>Высота:</p>
-                      <input class="input" type="text" value="" disabled>
-                    </div>
+            <form class="calc__form">
+              <div class="calc__form-row calc__form-row--bordered">
+                <p class="calc__form-title">Выберите тип помещения</p>
+                <div class="calc__form-checkboxes">
+                  <div class="calc__form-checkboxes-block">
+                    <label class="checkbox-label" for="1">
+                      <input class="checkbox-label__input" id="1" type="radio" name="type" value="1">
+                      <span class="checkbox-label__icon"></span>
+                      Квартира / коттедж
+                    </label>
+                    <label class="checkbox-label" for="2">
+                      <input class="checkbox-label__input" id="2" type="radio" name="type" value="2">
+                      <span class="checkbox-label__icon"></span>
+                      Гостиница
+                    </label>
+                    <label class="checkbox-label" for="3">
+                      <input class="checkbox-label__input" id="3" type="radio" name="type" value="3">
+                      <span class="checkbox-label__icon"></span>
+                      Ресторан / кафе
+                    </label>
+                    <label class="checkbox-label" for="4">
+                      <input class="checkbox-label__input" id="4" type="radio" name="type" value="4">
+                      <span class="checkbox-label__icon"></span>
+                      Офис
+                    </label>
+                    <label class="checkbox-label" for="5">
+                      <input class="checkbox-label__input" id="5" type="radio" name="type" value="5">
+                      <span class="checkbox-label__icon"></span>
+                      Торговый центр, магазин
+                    </label>
                   </div>
-                  <div class="calc__form-group2">
-                    <div class="cell">
-                      <p>Ширина:</p>
-                      <input class="input" type="text" value="" disabled>
-                    </div>
-                    <div class="cell">
-                      <p>Высота:</p>
-                      <input class="input" type="text" value="" disabled>
-                    </div>
-                  </div>
-                  <div class="calc__form-qnt">
-                    <p>Количество:</p>
-                    <input class="js-styler" min="0" max="99" step="1" type="number" value="1">
+                  <div class="calc__form-checkboxes-block">
+                    <label class="checkbox-label" for="6">
+                      <input class="checkbox-label__input" id="6" type="radio" name="type" value="6">
+                      <span class="checkbox-label__icon"></span>
+                      Бассейн
+                    </label>
+                    <label class="checkbox-label" for="7">
+                      <input class="checkbox-label__input" id="7" type="radio" name="type" value="7">
+                      <span class="checkbox-label__icon"></span>
+                      Спортивный зал
+                    </label>
+                    <label class="checkbox-label" for="8">
+                      <input class="checkbox-label__input" id="8" type="radio" name="type" value="8">
+                      <span class="checkbox-label__icon"></span>
+                      Кинотеатр / выставочный зал
+                    </label>
+                    <label class="checkbox-label" for="9">
+                      <input class="checkbox-label__input" id="9" type="radio" name="type" value="9">
+                      <span class="checkbox-label__icon"></span>
+                      Производство / автосервис
+                    </label>
+                    <label class="checkbox-label" for="10">
+                      <input class="checkbox-label__input" id="10" type="radio" name="type" value="10">
+                      <span class="checkbox-label__icon"></span>
+                      Больница / поликлиника
+                    </label>
                   </div>
                 </div>
-                <div class="calc__form-row">
-                  <p class="calc__result">Стоимость: 50600 руб.</p>
-                </div>
-                <div class="calc__form-row">
-                  <button class="calc__button" type="button">Добавить в заказ</button>
-                </div>
-                <div class="calc__form-row">
-                  <p class="calc__form-subtitle">Окно №1: 50000 руб. <button class="calc__form-delete" type="button" title="Удалить"></button></p>
-                  <p class="calc__form-subtitle">Окно №2: 120000 руб. <button class="calc__form-delete" type="button" title="Удалить"></button></p>
-                  <p class="calc__result">ИТОГО: 170000 руб.</p>
+              </div>
+              <div class="calc__form-row calc__form-row--bordered">
+                <div class="calc__form-group">
+                  <div class="cell">
+                    <p class="calc__form-title">Укажите площадь помещения:</p>
+                    <input class="input" type="text" value="">
+                  </div>
+                  <div class="cell">
+                    <p class="calc__form-title">Высота потолков в метрах:</p>
+                    <input class="input" type="text" value="">
+                  </div>
                 </div>
               </div>
-              <button class="calc__button calc__button--big" href="#popup" data-fancybox='form-popup'>Отправить заявку на рассчет</button>
-            </div>
+              <div class="calc__form-row">
+                <p class="calc__form-title">Выберите состав системы</p>
+                <div class="calc__form-checkboxes">
+                  <div class="calc__form-checkboxes-block">
+                    <label class="checkbox-label" for="11">
+                      <input class="checkbox-label__input" id="11" type="checkbox">
+                      <span class="checkbox-label__icon"></span>
+                      Приточная система
+                      <span class="info">
+                        <img class="info__icon" src="images/icons/info.svg" alt="">
+                        <span class="info__text">Подача в помещение, свежего воздуха с улицы, предварительно очищенного от пыли и подогретого</span>
+                      </span>
+                    </label>
+                    <label class="checkbox-label" for="12">
+                      <input class="checkbox-label__input" id="12" type="checkbox">
+                      <span class="checkbox-label__icon"></span>
+                      Вытяжная система
+                      <span class="info">
+                        <img class="info__icon" src="images/icons/info.svg" alt="">
+                        <span class="info__text">Удаление из помещения загрязненного (отработанного) воздуха</span>
+                      </span>
+                    </label>
+                    <label class="checkbox-label" for="13">
+                      <input class="checkbox-label__input" id="13" type="checkbox">
+                      <span class="checkbox-label__icon"></span>
+                      Охлаждение
+                      <span class="info">
+                        <img class="info__icon" src="images/icons/info.svg" alt="">
+                        <span class="info__text">Охлаждение приточного воздуха в теплый период года</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="calc__form-checkboxes-block">
+                    <label class="checkbox-label" for="14">
+                      <input class="checkbox-label__input" id="14" type="checkbox">
+                      <span class="checkbox-label__icon"></span>
+                      Рекуперация
+                      <span class="info">
+                        <img class="info__icon" src="images/icons/info.svg" alt="">
+                        <span class="info__text">Использование тепла вытяжного воздуха для нагрева приточного. В зависимости от типа рекуператора, возможный КПД от 45 до 80%</span>
+                      </span>
+                    </label>
+                    <label class="checkbox-label" for="15">
+                      <input class="checkbox-label__input" id="15" type="checkbox">
+                      <span class="checkbox-label__icon"></span>
+                      Увлажнение
+                      <span class="info">
+                        <img class="info__icon" src="images/icons/info.svg" alt="">
+                        <span class="info__text">Увлажнение приточного воздуха</span>
+                      </span>
+                    </label>
+                    <label class="checkbox-label" for="16">
+                      <input class="checkbox-label__input" id="16" type="checkbox">
+                      <span class="checkbox-label__icon"></span>
+                      Дымоудаление
+                      <span class="info">
+                        <img class="info__icon" src="images/icons/info.svg" alt="">
+                        <span class="info__text">Противопожарная вентиляция - удаление дыма и продуктов горения из помещения на улицу и подпор  наружного воздуха в зоны эвакуации людей</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="calc__form-row">
+                <p class="calc__result">Стоимость: 50600 руб.</p>
+              </div>
+              <div class="calc__form-row">
+                <button class="calc__button" type="button">Добавить в заказ</button>
+              </div>
+              <div class="calc__form-row">
+                <p class="calc__form-subtitle">Окно Тип 1.1 x 1: <span class="winsum">48801</span> руб.<br><small>(B=1000;H=1500)</small><button class="calc__form-delete" type="button" title="Удалить"></button></p>
+                <p class="calc__form-subtitle">Окно Тип 1.1 x 1: <span class="winsum">48801</span> руб.<br><small>(B=1000;H=1500)</small><button class="calc__form-delete" type="button" title="Удалить"></button></p>
+                <p class="calc__result">ИТОГО: 170000 руб.</p>
+              </div>
+            </form>
+            <button class="calc__button calc__button--big" href="#popup" data-fancybox='form-popup'>Отправить заявку на рассчет</button>
           </div>
+          <table class="table">
+            <tr>
+              <td><b>Название услуги:</b></td>
+              <td><b>Цена:</b></td>
+            </tr>
+            <tr>
+              <td>Услуга</td>
+              <td>10000 руб</td>
+            </tr>
+            <tr>
+              <td>Услуга</td>
+              <td>10000 руб</td>
+            </tr>
+            <tr>
+              <td>Услуга</td>
+              <td>10000 руб</td>
+            </tr>
+            <tr>
+              <td>Услуга</td>
+              <td>10000 руб</td>
+            </tr>
+            <tr>
+              <td>Услуга</td>
+              <td>10000 руб</td>
+            </tr>
+          </table>
         </div>
       </div>
       <div id="why" class="features">
@@ -374,9 +473,6 @@
           </div>
         </div>
       </div>
-      <a id="video" class="video" href="https://www.youtube.com/watch?v=8xjMOu5BBko" data-fancybox="">
-        <img class="video__image" src="images/content/video.jpg" alt="VIDEO">
-      </a>
     </div>
     //= template/footer.html
     <div id="popup" class="popup-form">
