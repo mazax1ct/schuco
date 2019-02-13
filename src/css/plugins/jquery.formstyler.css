@@ -59,6 +59,7 @@
 .jq-number__field input {
   -moz-appearance: textfield;
   text-align: left;
+  height: 40px;
 }
 
 .jq-number__field input::-webkit-inner-spin-button,
