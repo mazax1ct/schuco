@@ -87,16 +87,45 @@
         @media(min-width: 600px)
           padding-right: 20px
 
-  &__result
-    font-size: 18px
-    font-weight: 500
-    margin-bottom: 10px
+  &__result-table
+    font-size: 13px
 
-    @media(min-width: 768px)
-      font-size: 20px
+    @media(min-width: 480px)
+      font-size: 14px
+
+    @media(min-width: 1200px)
+      font-size: 16px
+
+  &__result-table-row
+    display: flex
 
     &:last-child
-      margin-bottom: 0
+      .calc__result-table-cell
+        border-bottom: 1px solid #111
+
+  &__result-table-cell
+    border-top: 1px solid #111
+    border-left: 1px solid #111
+    padding: 10px
+
+    &:last-child
+      border-right: 1px solid #111
+
+    &.sm-visible
+      @media(max-width: 767px)
+        display: none
+
+    &.grow
+      flex-grow: 1
+
+    &.number
+      min-width: 40px
+
+    &.points
+      min-width: 80px
+
+    &.cost
+      min-width: 130px
 
   &__button
     background-color: #0089EE
