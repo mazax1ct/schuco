@@ -312,15 +312,46 @@
                 </div>
               </div>
               <div class="calc__form-row">
-                <p class="calc__result">Стоимость: 50600 руб.</p>
+                <button class="calc__button" type="button">РАССЧИТАТЬ СТОИМОСТЬ</button>
               </div>
               <div class="calc__form-row">
-                <button class="calc__button" type="button">Добавить в заказ</button>
-              </div>
-              <div class="calc__form-row">
-                <p class="calc__form-subtitle">Окно Тип 1.1 x 1: <span class="winsum">48801</span> руб.<br><small>(B=1000;H=1500)</small><button class="calc__form-delete" type="button" title="Удалить"></button></p>
-                <p class="calc__form-subtitle">Окно Тип 1.1 x 1: <span class="winsum">48801</span> руб.<br><small>(B=1000;H=1500)</small><button class="calc__form-delete" type="button" title="Удалить"></button></p>
-                <p class="calc__result">ИТОГО: 170000 руб.</p>
+                <p>РАСЧЕТ СИСТЕМЫ ВЕНТИЛЯЦИИ ПО ВЫБРАННЫМ ПАРАМЕТРАМ:</p>
+                <div class="calc__result-table">
+                  <div class="calc__result-table-row">
+                    <div class="calc__result-table-cell sm-visible number">№</div>
+                    <div class="calc__result-table-cell grow">Наименование</div>
+                    <div class="calc__result-table-cell sm-visible points">Ед. изм</div>
+                    <div class="calc__result-table-cell text-center cost">Стоимость, руб.</div>
+                  </div>
+                  <div class="calc__result-table-row">
+                    <div class="calc__result-table-cell sm-visible number">1.</div>
+                    <div class="calc__result-table-cell grow">Основное оборудование: вентиляционная установка, вентиляторы, теплообменники и т.п.</div>
+                    <div class="calc__result-table-cell sm-visible points">комп.</div>
+                    <div class="calc__result-table-cell text-center cost">1 260</div>
+                  </div>
+                  <div class="calc__result-table-row">
+                    <div class="calc__result-table-cell sm-visible number">2.</div>
+                    <div class="calc__result-table-cell grow">Воздуховоды, решетки, изоляция, крепежный и расходный материал </div>
+                    <div class="calc__result-table-cell sm-visible points">комп.</div>
+                    <div class="calc__result-table-cell text-center cost">1 080</div>
+                  </div>
+                  <div class="calc__result-table-row">
+                    <div class="calc__result-table-cell sm-visible number">3.</div>
+                    <div class="calc__result-table-cell grow">Автоматика: щиты управления, датчики, кабельная продукция и т.п.</div>
+                    <div class="calc__result-table-cell sm-visible points">комп.</div>
+                    <div class="calc__result-table-cell text-center cost">360</div>
+                  </div>
+                  <div class="calc__result-table-row">
+                    <div class="calc__result-table-cell sm-visible number">4.</div>
+                    <div class="calc__result-table-cell grow">Монтажные и пусконаладочные работы</div>
+                    <div class="calc__result-table-cell sm-visible points">работа</div>
+                    <div class="calc__result-table-cell text-center cost">900</div>
+                  </div>
+                  <div class="calc__result-table-row">
+                    <div class="calc__result-table-cell text-right grow"><b>ИТОГО:</b></div>
+                    <div class="calc__result-table-cell text-center cost"><b id="total-value">2 137 478 625</b></div>
+                  </div>
+                </div>
               </div>
             </form>
             <button class="calc__button calc__button--big" href="#popup" data-fancybox='form-popup'>Отправить заявку на рассчет</button>
