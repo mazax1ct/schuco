@@ -19,10 +19,8 @@ $(document).ready(function() {
         mobileFirst: true,
         prevArrow: '<button class="slick-arrow slick-arrow--prev" aria-label="Назад" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
         nextArrow: '<button class="slick-arrow slick-arrow--next" aria-label="Вперед" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
-
       });
     }
-
   }
 
   //слайдер карточек

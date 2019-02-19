@@ -134,6 +134,10 @@
     margin-left: auto
     margin-right: auto
 
+  .slick-track
+    @media(min-width: 568px)
+      display: flex
+
   &__slide
     margin-bottom: 10px
     padding-left: 5px
@@ -141,6 +145,8 @@
     width: 25%
 
     @media(min-width: 568px)
+      display: flex
+      height: auto
       margin-bottom: 0
       width: auto
 
@@ -178,6 +184,10 @@
       display: block
       height: 100%
       position: relative
+
+      @media(min-width: 568px)
+        align-items: center
+        display: flex
 
       &::before
         background-color: #e9f1ff
