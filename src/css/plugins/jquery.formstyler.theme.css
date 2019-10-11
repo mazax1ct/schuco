@@ -11,8 +11,7 @@
   padding-right: 38px;
 }
 
-.jq-number__field:hover {
-}
+.jq-number__field:hover {}
 
 .jq-number__field input {
   box-sizing: border-box;
@@ -93,7 +92,8 @@
   padding: 0 38px 0 12px;
   border-radius: 4px;
   background-color: #f2f2f2;
-  font: 16px/40px 'Franklin Gothic', Arial, sans-serif;
+  border: 1px solid #ccc;
+  font: 16px/38px 'Franklin Gothic', Arial, sans-serif;
   color: #111;
 }
 
@@ -171,12 +171,12 @@
 }
 
 .jq-selectbox li.selected {
-  background-color: #78b928;
+  background-color: #c82f22;
   color: #fff;
 }
 
 .jq-selectbox li:hover {
-  background-color: #78b928;
+  background-color: #c82f22;
   color: #FFF;
 }
 

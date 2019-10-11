@@ -125,7 +125,7 @@ body.compensate-for-scrollbar {
 .fancybox-slide {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  display: none;
+  /*display: none;*/
   height: 100%;
   left: 0;
   outline: none;
@@ -514,6 +514,7 @@ body.compensate-for-scrollbar {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
@@ -525,6 +526,7 @@ body.compensate-for-scrollbar {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
@@ -640,12 +642,15 @@ body.compensate-for-scrollbar {
     padding-left: 6px;
     padding-right: 6px;
   }
+
   .fancybox-slide--image {
     padding: 6px 0 0 0;
   }
+
   .fancybox-slide--image .fancybox-content {
     margin-bottom: 6px;
   }
+
   .fancybox-slide--image .fancybox-close-small {
     background: #4e4e4e;
     color: #f2f4f6;
@@ -864,9 +869,11 @@ body.compensate-for-scrollbar {
   .fancybox-thumbs {
     width: 110px;
   }
+
   .fancybox-show-thumbs .fancybox-inner {
     right: 110px;
   }
+
   .fancybox-thumbs__list a {
     max-width: calc(100% - 10px);
   }

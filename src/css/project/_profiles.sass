@@ -1,4 +1,4 @@
-.profiles
+.projects
   background-color: #f2f2f2
   padding-top: 20px
   padding-bottom: 20px
@@ -11,7 +11,7 @@
     padding-top: 90px
     padding-bottom: 100px
 
-.profiles-slider
+.projects-slider
   display: flex
   margin-left: auto
   margin-right: auto
@@ -19,12 +19,9 @@
   width: 280px
 
   @media(min-width: 768px)
-    width: 700px
-
-  @media(min-width: 992px)
-    width: 900px
-
-  @media(min-width: 1200px)
+    flex-wrap: wrap
+    margin-left: 0
+    margin-right: 0
     width: 100%
 
   .slick-track
@@ -39,15 +36,22 @@
     vertical-align: top
 
     @media(min-width: 768px)
+      display: flex
+      margin-bottom: 20px
       padding-left: 10px
       padding-right: 10px
+      width: 50%
+
+    @media(min-width: 992px)
+      width: calc(100% /3)
 
     @media(min-width: 1200px)
+      margin-bottom: 32px
       padding-left: 16px
       padding-right: 16px
 
   &.slick-initialized
-    .profiles-slider__slide
+    .projects-slider__slide
       display: flex
 
   .slick-arrow
@@ -76,7 +80,7 @@
     @media(min-width: 768px)
       fill: #7c7c7c
 
-.profile-card
+.project-card
   background-color: #fff
   display: flex
   flex-direction: column
@@ -127,10 +131,11 @@
     text-transform: uppercase
 
   &__price
-    background-color: #78b928
+    background-color: #c82f22
     color: #fff
     display: inline-block
     padding: 5px 10px
+    white-space: nowrap
 
   &__list
     list-style: none

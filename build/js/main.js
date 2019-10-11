@@ -6,42 +6,21 @@ $(document).ready(function() {
     });
   }, 100);
 
-  //слайдер профилей
-  if ($('.js-profiles').length) {
-    $('.js-profiles').slick({
-      autoplay: false,
-      dots: false,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      mobileFirst: true,
-      prevArrow: '<button class="slick-arrow slick-arrow--prev" aria-label="Назад" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
-      nextArrow: '<button class="slick-arrow slick-arrow--next" aria-label="Вперед" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3
-          }
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
+  //слайдер проектов
+  if ($('.js-projects').length) {
+    if($('body').width() < 768){
+      $('.js-projects').slick({
+        autoplay: false,
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        mobileFirst: true,
+        prevArrow: '<button class="slick-arrow slick-arrow--prev" aria-label="Назад" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_left"/></svg></button>',
+        nextArrow: '<button class="slick-arrow slick-arrow--next" aria-label="Вперед" type="button"><svg class="slick-arrow__icon" aria-hidden="true"><use xlink:href="#arrow_right"/></svg></button>',
+      });
+    }
   }
 
   //слайдер карточек
@@ -174,5 +153,11 @@ $(document).ready(function() {
   $('.js-popup-close').on('click', function() {
   	$.fancybox.close();
   	return false;
+  });
+
+  $('.js-calc-change').click(function() {
+    $('.calc-change').toggleClass("is-active");
+    $(".calc__block").toggleClass("is-active");
+    return false;
   });
 });
