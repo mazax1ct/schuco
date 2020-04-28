@@ -1,17 +1,14 @@
 .main-banner
-  background-position: 50% 50%
+  background-position: 50% 100%
   background-size: cover
   background-repeat: no-repeat
   background-color: #0e243d
   display: block
-  min-height: 215px
+  height: 215px
   text-align: center
+
+  @media(min-width: 690px)
+    height: 400px
 
   @media(min-width: 1600px)
     height: 780px
-
-  &__image
-    max-width: 80%
-
-    @media(min-width: 1600px)
-      max-width: 1440px

@@ -130,34 +130,9 @@ $(document).ready(function() {
     return false;
   });
 
-  //переключение профиля
-  $(".calc__window-block-inner").click(function() {
-    $(".calc__window-block-inner").removeClass("is-active");
-    $(this).addClass("is-active");
-    $('.js-calc__form-image').attr('src', $(this).attr('data-image'));
-    return false;
-  });
-
-  //открытие попапа
-  $("[data-fancybox='form-popup']").fancybox({
-    touch: false,
-    infobar: false,
-    toolbar: false,
-    smallBtn: false,
-    buttons: ["close"],
-    animationEffect: false,
-    arrows: false
-	});
-
   //закрытие попапа
   $('.js-popup-close').on('click', function() {
   	$.fancybox.close();
   	return false;
-  });
-
-  $('.js-calc-change').click(function() {
-    $('.calc-change').toggleClass("is-active");
-    $(".calc__block").toggleClass("is-active");
-    return false;
   });
 });
